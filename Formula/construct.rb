@@ -12,7 +12,7 @@
 class Construct < Formula
   desc "Local-first agent orchestration layer for AI coding tools"
   homepage "https://github.com/geraldmaron/construct"
-  version "1.0.3"
+  version "1.0.4"
   license "Elastic-2.0"
 
   livecheck do
@@ -22,23 +22,23 @@ class Construct < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-darwin-arm64"
-      sha256 "9076d92543ca1926cc82d0d70b3c5074102e1498250f6dfcbf38be10a34cd259"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-darwin-arm64"
+      sha256 "75a52c4c6b22ac3e566ce4fff40a6dab08dee3d239f773c00b133c1775a22bd5"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-darwin-x64"
-      sha256 "87c6153dee6cbef8b7be22d54da189c5fe4ffa3a4703af129e60a60f570c2718"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-darwin-x64"
+      sha256 "9703ca6b9218411a85f05dd6d0a574d0b4e90c0dc768dd02824c228a829388ae"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-linux-arm64"
-      sha256 "aa7fa19ddf0990180dadaae55c23d2a64a2be8517161233f7ab0c65c03b80f96"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-linux-arm64"
+      sha256 "fb8f95932b084912f095645a01f9011a015081dff097b5d57cc863b79fb4b2c0"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-linux-x64"
-      sha256 "62c0070786c69b32f823eab06764b45758ad8f8c30696886b181357b378d861f"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-linux-x64"
+      sha256 "1e5fffe21a68c5b5b6755c37c10ff6aa82f057f6cd0edc1a533efdc426ccac5e"
     end
   end
 
@@ -49,7 +49,7 @@ class Construct < Formula
   def caveats
     <<~EOS
       To finish setup on this machine, run:
-        construct init
+        construct setup
 
       Construct uses a local Postgres container (via Docker) for hybrid
       retrieval. If Docker is not installed, Construct falls back to a JSON
