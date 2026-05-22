@@ -12,7 +12,7 @@
 class Construct < Formula
   desc "Local-first agent orchestration layer for AI coding tools"
   homepage "https://github.com/geraldmaron/construct"
-  version "0.1.0"
+  version "1.0.3"
   license "Elastic-2.0"
 
   livecheck do
@@ -22,23 +22,23 @@ class Construct < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v0.1.0/construct-darwin-arm64"
-      sha256 "REPLACE_ON_FIRST_RELEASE_DARWIN_ARM64"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-darwin-arm64"
+      sha256 "9076d92543ca1926cc82d0d70b3c5074102e1498250f6dfcbf38be10a34cd259"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v0.1.0/construct-darwin-x64"
-      sha256 "REPLACE_ON_FIRST_RELEASE_DARWIN_X64"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-darwin-x64"
+      sha256 "87c6153dee6cbef8b7be22d54da189c5fe4ffa3a4703af129e60a60f570c2718"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v0.1.0/construct-linux-arm64"
-      sha256 "REPLACE_ON_FIRST_RELEASE_LINUX_ARM64"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-linux-arm64"
+      sha256 "aa7fa19ddf0990180dadaae55c23d2a64a2be8517161233f7ab0c65c03b80f96"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v0.1.0/construct-linux-x64"
-      sha256 "REPLACE_ON_FIRST_RELEASE_LINUX_X64"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.3/construct-linux-x64"
+      sha256 "62c0070786c69b32f823eab06764b45758ad8f8c30696886b181357b378d861f"
     end
   end
 
@@ -49,7 +49,7 @@ class Construct < Formula
   def caveats
     <<~EOS
       To finish setup on this machine, run:
-        construct setup
+        construct init
 
       Construct uses a local Postgres container (via Docker) for hybrid
       retrieval. If Docker is not installed, Construct falls back to a JSON
