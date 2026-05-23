@@ -1,18 +1,7 @@
-# Construct — Homebrew formula template.
-#
-# Authoritative copy lives in the construct repo at templates/homebrew/
-# construct.rb. The tap repo (geraldmaron/homebrew-construct) carries the
-# active formula at Formula/construct.rb and is updated by the release
-# workflow's Homebrew bump step on every tag push.
-#
-# When the release pipeline fires for `vX.Y.Z`, dawidd6/action-homebrew-bump-
-# formula rewrites the url + sha256 fields for each platform from the
-# matching GitHub Release asset. The placeholder SHAs below are only used
-# when seeding the tap by hand the first time.
 class Construct < Formula
   desc "Local-first agent orchestration layer for AI coding tools"
   homepage "https://github.com/geraldmaron/construct"
-  version "1.0.4"
+  version "1.0.5"
   license "Elastic-2.0"
 
   livecheck do
@@ -22,23 +11,23 @@ class Construct < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-darwin-arm64"
-      sha256 "75a52c4c6b22ac3e566ce4fff40a6dab08dee3d239f773c00b133c1775a22bd5"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.5/construct-darwin-arm64"
+      sha256 "cb26f40216876e1dd1371f741cbd1ae4253f6c79335db35855781cc6041e74f0"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-darwin-x64"
-      sha256 "9703ca6b9218411a85f05dd6d0a574d0b4e90c0dc768dd02824c228a829388ae"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.5/construct-darwin-x64"
+      sha256 "01ac2042ac3195c3e5d68eab4270db2728995b8947c662f2f1305e48d0efbc0b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-linux-arm64"
-      sha256 "fb8f95932b084912f095645a01f9011a015081dff097b5d57cc863b79fb4b2c0"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.5/construct-linux-arm64"
+      sha256 "0f52ac93546813a09f0bc86703d780b30b9d077943fb3162ddb3af59bd34e5b4"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.0.4/construct-linux-x64"
-      sha256 "1e5fffe21a68c5b5b6755c37c10ff6aa82f057f6cd0edc1a533efdc426ccac5e"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.0.5/construct-linux-x64"
+      sha256 "da3e768d40cdf2e4d4ceff7017f7c3a49df2473786af0274839534bf914ad872"
     end
   end
 
