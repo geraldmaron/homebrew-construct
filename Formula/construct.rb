@@ -1,7 +1,7 @@
 class Construct < Formula
   desc "Local-first agent orchestration layer for AI coding tools"
   homepage "https://github.com/geraldmaron/construct"
-  version "1.4.1"
+  version "1.4.2"
   license "Elastic-2.0"
 
   livecheck do
@@ -11,23 +11,23 @@ class Construct < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.1/construct-darwin-arm64"
-      sha256 "6248570ef17b7d154692c11e67c8895b66d594e4e41cd57e1ca8f62967ecd57e"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-darwin-arm64"
+      sha256 "a02aa337e2de10e36369fbe7ad829a7859fed80f9dde770ef7eda1f636f46dc9"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.1/construct-darwin-x64"
-      sha256 "902f15a006c7e9c4f5f65cad72af6dddd17e58a762efda6c73aa9830f9f7dd7b"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-darwin-x64"
+      sha256 "a6133aff18b2ff60cde7d0712354bd8c81ed61c2577d3cd3eac5f14080f92008"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.1/construct-linux-arm64"
-      sha256 "2e2e3e1b2667f90e8fc522b61a74e212d421b6b2ba82fece54be8f48e7b22b37"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-linux-arm64"
+      sha256 "8212312d707d17106148880c1212c8891864140f4542fd17435a4963f2ad7973"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.1/construct-linux-x64"
-      sha256 "ed46f5a4ea4091c11b2ed3760346707e718f389ec529c58c57da52e888e0968d"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-linux-x64"
+      sha256 "9f8e65c85d735db1534f50a54a2eb64649f5f8e1a3f936274493c4ab6a860d56"
     end
   end
 
