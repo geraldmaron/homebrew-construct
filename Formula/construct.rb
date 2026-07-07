@@ -1,8 +1,8 @@
 class Construct < Formula
   desc "Local-first agent orchestration layer for AI coding tools"
   homepage "https://github.com/geraldmaron/construct"
-  version "1.4.2"
-  license "Elastic-2.0"
+  version "1.5.0"
+  license "Apache-2.0"
 
   livecheck do
     url :stable
@@ -11,23 +11,23 @@ class Construct < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-darwin-arm64"
-      sha256 "a02aa337e2de10e36369fbe7ad829a7859fed80f9dde770ef7eda1f636f46dc9"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.5.0/construct-darwin-arm64"
+      sha256 "595e5ee74cb3bea298f1db9548282dca8417fe986bc439641a946595a6c54ea4"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-darwin-x64"
-      sha256 "a6133aff18b2ff60cde7d0712354bd8c81ed61c2577d3cd3eac5f14080f92008"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.5.0/construct-darwin-x64"
+      sha256 "652b72b0f348e3a6297e109964b37cadce149a9d82b1fa9f7fdc1d387ac4d5c6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-linux-arm64"
-      sha256 "8212312d707d17106148880c1212c8891864140f4542fd17435a4963f2ad7973"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.5.0/construct-linux-arm64"
+      sha256 "4e042ad3e39e0c2f3528b9ab9f8a459ff3698429bbae7ce53f9eedd6fb12e2f2"
     end
     on_intel do
-      url "https://github.com/geraldmaron/construct/releases/download/v1.4.2/construct-linux-x64"
-      sha256 "9f8e65c85d735db1534f50a54a2eb64649f5f8e1a3f936274493c4ab6a860d56"
+      url "https://github.com/geraldmaron/construct/releases/download/v1.5.0/construct-linux-x64"
+      sha256 "4ae903de02b8e57b40d7cc237643d2a459ac5aff712ef4c2ae2d8a1f6e92daac"
     end
   end
 
@@ -37,16 +37,7 @@ class Construct < Formula
 
   def caveats
     <<~EOS
-      To finish setup on this machine, run:
-        construct setup
-
-      Construct uses a local Postgres container (via Docker) for hybrid
-      retrieval. If Docker is not installed, Construct falls back to a JSON
-      vector index — no hard requirement.
-
-      To wire up hooks and agents per project, add Construct as a dev
-      dependency in that project:
-        npm install -D @geraldmaron/construct
+      Run 'construct install --scope=user' then 'construct init' in your project.
     EOS
   end
 
